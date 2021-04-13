@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Объявления о продаже</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body >
+    <main class="main-container">
+    <div class="header" id="headerJS">
+        <div class="nav_text_div">
+                <div class="nav_logo">
+                    <h1>РЫБАЦКiЙ СТАНЪ</h1>
+                </div>
+                 <div class="nav_elems">
+                     <p id="nav_p_katalog">Каталог</p>
+                     <p id="nav_p_feedback">Обратная связь</p>
+                     <p id="nav_p_about">О нас</p>
+                </div>
+        </div>
+    </div>
+    <div id="first_pic">
+            <img src="static/images/3.jpeg" width="100%" height="100%" />
+            <p id="first_par">Рыбацкий стан - <br/> открыт для сотрудничества</p>
+    </div>
+    <div id="second_section">
+
+        <h1>
+           МЫ ПРЕДОСТАВЛЯЕМ
+        </h1>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div id="border_second">
+            <span>
+                <img src="static/images/icos/delivery-time.png" width="64px" height="64px" />
+                <p class="section_two_p">
+
+                    Хранение<br/>
+                    <div class="p_description">
+
+                        <p>Мы оказываем услуги по хранению вашего сырья или продукции</p>
+                    </div>
+                </p>
+            </span>
+
+            <span>
+                <img src="static/images/icos/process.png" width="64px" height="64px" />
+                <p class="section_two_p">
+                    Обработка<br/>
+                    <div class="p_description">
+
+                        <p>Мы можем провести обработку вашего сырья</p>
+                    </div>
+                </p>
+            </span>
+
+            <span>
+                <img src="static/images/icos/tuna.png" width="64px" height="64px" />
+                <p class="section_two_p">
+                    Производство<br/>
+                    <div class="p_description">
+
+                        <p>Мы оказываем услуги по производству консерв</p>
+                    </div>
+                </p>
+            </span>
+        </div>
+    </div>
+    <hr />
+    <br />
+    <div id="third_section">
+        <h1>
+            ГДЕ НАС НАЙТИ
+        </h1>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af43cab27dd25021fe40b42ff9cfd89b7cb858d2984c0a94d9165f8429e30e20c&amp;source=constructor" width="1280" height="500" frameborder="0" id="ya_map"></iframe>
+    </div>
+
+    <div class="content">
+        <!--<div>
+            {% for rubric in rubrics %}
+                <a href="/extos/{{ rubric.pk }}/">{{ rubric.name }}</a>
+            {% endfor %}
+            </div>
+            {% for b in bbs %}
+                <div class="bb">
+                    <h1 id="blokk">{{ b.title }}</h1>
+                    <p><b>Описание: </b>{{ b.content }}</p>
+                    <p><b>Дата публикации: </b>{{ b.published|date:"d.m.Y H:i:s" }}</p>
+                    <hr>
+                </div>
+            {% endfor %} -->
+        </div>
+        <script type="text/javascript" src="static/js/main.js"></script>
+    <!--<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+    </main>
+</body>
+</html>
