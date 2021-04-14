@@ -78,22 +78,12 @@
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af43cab27dd25021fe40b42ff9cfd89b7cb858d2984c0a94d9165f8429e30e20c&amp;source=constructor" width="1280" height="500" frameborder="0" id="ya_map"></iframe>
     </div>
 
-    <div class="content">
-        <!--<div>
-            {% for rubric in rubrics %}
-                <a href="/extos/{{ rubric.pk }}/">{{ rubric.name }}</a>
-            {% endfor %}
-            </div>
-            {% for b in bbs %}
-                <div class="bb">
-                    <h1 id="blokk">{{ b.title }}</h1>
-                    <p><b>Описание: </b>{{ b.content }}</p>
-                    <p><b>Дата публикации: </b>{{ b.published|date:"d.m.Y H:i:s" }}</p>
-                    <hr>
-                </div>
-            {% endfor %} -->
-        </div>
-        <script type="text/javascript" src="static/js/main.js"></script>
+    <div id="vue_app_test">
+        <p>{{ message }} </p>
+
+    </div>
+    <script src="dist/bundle.js"></script>
+
     <!--<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
     </main>
 </body>
