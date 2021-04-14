@@ -7,18 +7,20 @@
 </template>
 
 <script>
-import { Vue } from 'vue/index';
+import * as Vue from 'vue';
+console.log('Hey?')
+
 const HelloVueApp = {
+  el : '#testing',
   data() {
     return {
-      text: 'Hello Vue!!'
+      message: 'НАКОНЕЦТО БЛЯТЬ'
     }
   }
 }
 
-const app_vue_test = Vue.createApp(HelloVueApp).mount('#vue_app_test')
+export default Vue.createApp(HelloVueApp).mount('#testing')
 
-export default app_vue_test
 </script>
 
 <style scoped>

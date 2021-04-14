@@ -29,7 +29,7 @@ module.exports = {
     resolve: {
         alias: {
             'vue-loader' : 'vue-loader/dist/plugin',
-            'vue-style-loader' : 'vue-s'
+            'vue-style-loader' : 'vue-style-loader/index'
         }
     },
     plugins: [
