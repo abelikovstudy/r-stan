@@ -25,62 +25,81 @@
             <img src="static/images/3.jpeg" width="100%" height="100%" />
             <p id="first_par">Рыбацкий стан - <br/> открыт для сотрудничества</p>
     </div>
+
     <div id="second_section">
+        <!--<button @click="show = !show">
+            Toggle render
+        </button> -->
+        <!-- Тестим невидимый элемент -->
+        <transition name="slide-fade">
+            <h1  v-if="show">
+               МЫ ПРЕДОСТАВЛЯЕМ
+            </h1>
+        </transition>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
-        <h1>
-           МЫ ПРЕДОСТАВЛЯЕМ
-        </h1>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
         <div id="border_second">
-            <span>
-                <img src="static/images/icos/delivery-time.png" width="64px" height="64px" />
+        <transition-group name="slide-fade">
+            <span v-if="show">
+                <img src="static/images/icos/delivery-time.png" width="64px" height="64px"  id="__firstPic"/>
                 <p class="section_two_p">
-
-                    Хранение<br/>
+                    Хранение</p><br/>
                     <div class="p_description">
-
-                        <p>Мы оказываем услуги по хранению вашего сырья или продукции</p>
+                        <p >Мы оказываем услуги по хранению вашего сырья или продукции</p>
                     </div>
-                </p>
+
             </span>
+        </transition-group>
 
-            <span>
-                <img src="static/images/icos/process.png" width="64px" height="64px" />
+        <transition-group name="slide-fade">
+            <span v-if="show">
+                <img src="static/images/icos/process.png" width="64px" height="64px" id="__secondPic"/>
                 <p class="section_two_p">
-                    Обработка<br/>
-                    <div class="p_description">
-
+                    Обработка</p><br/>
+                    <div class="p_description" >
                         <p>Мы можем провести обработку вашего сырья</p>
                     </div>
-                </p>
-            </span>
 
-            <span>
-                <img src="static/images/icos/tuna.png" width="64px" height="64px" />
+            </span>
+        </transition-group>
+
+        <transition-group name="slide-fade">
+            <span v-if="show">
+                <img src="static/images/icos/tuna.png" width="64px" height="64px" id="__thirdPic"/>
                 <p class="section_two_p">
-                    Производство<br/>
+                    Производство</p><br/>
                     <div class="p_description">
 
                         <p>Мы оказываем услуги по производству консерв</p>
                     </div>
-                </p>
+
             </span>
+        </transition-group>
         </div>
+
     </div>
+
     <hr />
     <br />
+        <transition-group name="slide-fade">
     <div id="third_section">
-        <h1>
+
+        <h1 v-if="show">
             ГДЕ НАС НАЙТИ
         </h1>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af43cab27dd25021fe40b42ff9cfd89b7cb858d2984c0a94d9165f8429e30e20c&amp;source=constructor" width="1280" height="500" frameborder="0" id="ya_map"></iframe>
-    </div>
 
+    </div>
+    </transition-group>
     <div id="testing">
-        {{ message }}
+        <p id="text">{{ message }}, {{message2}} {{counter}} раз </p>
+
+    </div>
+    <div id="demo">
+
 
     </div>
         <script src="dist/bundle.js"></script>
